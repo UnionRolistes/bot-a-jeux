@@ -12,7 +12,7 @@ bot_key = config.get("Bot", "key") #bot's key
 pcmd = config.get("Bot", "Command_Prefix") #command s'Prefix
 
 #bot client
-Client = commands.Bot(command_prefix=pcmd) 
+Client = commands.Bot(command_prefix=pcmd, pm_help=True) 
 
 @Client.event
 async def on_ready():
