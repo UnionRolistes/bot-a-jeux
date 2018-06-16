@@ -1,7 +1,7 @@
 Jeux:
 	Loup garou
 	Jeu de cartes
-	Jeu de tarrot
+	Jeu de tarrot	==> https://www.beuselinck.fr/article3.html
 	Timeline
 	Go
 	Echec
