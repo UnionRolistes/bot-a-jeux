@@ -12,7 +12,8 @@ bot_key = config.get("Bot", "key") #bot's key
 pcmd = config.get("Bot", "Command_Prefix") #command s'Prefix
 
 #bot client
-Client = commands.Bot(command_prefix=pcmd, pm_help=True) 
+Client = commands.Bot(command_prefix=pcmd) 
+Client.remove_command('help')
 
 @Client.event
 async def on_ready():
@@ -22,5 +23,9 @@ async def on_ready():
 @Client.command()
 async def ping():
     await Client.say("Pong!")
+
+@Client.command()
+async def help():
+    await Client.say("Bot en Construction!")
 
 Client.run(bot_key)
