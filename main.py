@@ -1,7 +1,6 @@
 #Imports
 import discord
 from discord.ext import commands
-import jeux
 import asyncio
 import configparser
 
@@ -19,6 +18,7 @@ Client.remove_command('help')
 async def on_ready():
     print("Starting Bot!")
     print("Bot Id = " + Client.user.id)
+    __import__('jeux')
 
 @Client.command()
 async def ping():
@@ -28,4 +28,5 @@ async def ping():
 async def help():
     await Client.say("Bot en Construction!")
 
-Client.run(bot_key)
+if __name__=='__main__':
+    Client.run(bot_key)
