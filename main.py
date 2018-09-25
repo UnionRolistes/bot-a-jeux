@@ -18,6 +18,7 @@ Client.remove_command('help')
 async def on_ready():
     print("Starting Bot!")
     print("Bot Id = " + Client.user.id)
+    #   import every modules in 'jeux' folder
     __import__('jeux')
 
 @Client.command()
