@@ -1,0 +1,16 @@
+Jeux:
+	Loup garou
+	Jeu de cartes
+	Jeu de tarrot	==> https://www.beuselinck.fr/article3.html
+	Timeline
+	Go
+	Echec
+	Guerre des roses
+	Une
+
+Image libre de droits
+
+-----------------------
+<Darko> https://dotsec.fr/index.php/Lycanobot
+https://doc.ubuntu-fr.org/echecs
+https://doc.ubuntu-fr.org/go --- https://www.gnu.org/software/gnugo/
