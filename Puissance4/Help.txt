@@ -1,0 +1,25 @@
+#Help
+import datetime
+
+@client.command()
+async def help(ctx):
+  # Afficher la liste des commandes
+  message = 'Voici la liste des commandes disponibles:\n'
+  message += '.puissance4: jouer au puissance 4\n'
+  message += '.top: afficher le classement des meilleurs joueurs\n'
+  message += '.help: afficher cette aide\n'
+  await ctx.send(message)
+
+  # Afficher le tableau des scores
+  message = 'Classement des meilleurs joueurs:\n'
+  for i, (joueur, score) in enumerate(scores.items()):
+    date = score['date'].strftime('%d/%m/%Y %H:%M:%S')  # Formater la date au format "dd/mm/yyyy hh:mm:ss"
+    message += f'{i+1}. {joueur}: {score["points"]} points (joué le {date})\n'
+  await ctx.send(message)
+
+
+# scores = {
+#   'joueur 1': {'points': 10, 'date': datetime.datetime(2022, 1, 1, 12, 0, 0)},
+#   'joueur 2': {'points': 5, 'date': datetime.datetime(2022, 1, 2, 18, 30, 0)},
+#   ...
+# }
