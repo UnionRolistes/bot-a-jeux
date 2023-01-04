@@ -7,6 +7,35 @@ client = commands.Bot(command_prefix = '.')
 
 scores = {}  # Dictionnaire pour stocker les scores
 
+#def afficher_grille(grille):
+#    # Afficher la première ligne
+#    print("  1 2 3 4 5 6 7")
+#    print(" ┌──────┬──────┬──────┬──────┬──────┬──────┬──────┐")
+#    
+#    # Afficher chaque ligne de la grille
+#    for i, ligne in enumerate(grille):
+#        # Afficher le numéro de la ligne
+#        print(f"{i+1} ", end="")
+#        # Afficher chaque colonne de la ligne
+#        for j, case in enumerate(ligne):
+#            # Afficher le caractère de la case
+#            if case == "X":
+#                print("X", end=" ")
+#            elif case == "O":
+#                print("O", end=" ")
+#            else:
+#                print(" ", end=" ")
+#            # Afficher la séparation entre les colonnes
+#            if j < len(ligne) - 1:
+#                print("│", end=" ")
+#        # Afficher la séparation entre les lignes
+#        if i < len(grille) - 1:
+#            print("\n ├──┼───┼───┼───┼───┼───┼───")
+#        else:
+#            print("\n └──────┴──────┴──────┴──────┴──────┴──────┴──────┘")
+
+
+
 @client.command()
 async def puissance4(ctx):
   # Créer la grille de jeu
