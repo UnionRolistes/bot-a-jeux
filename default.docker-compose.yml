@@ -1,0 +1,9 @@
+version: '3'
+name: Union-des-rolistes
+
+services:
+  bot:
+    environment:
+      - BOT_GAME_VERSION=0.0.0
+    volumes:
+      - ../bot-a-jeux/bot/extends/:/app/extends/games/:ro #add folder as "games" in extends container
