@@ -92,29 +92,30 @@ async def puissance4(ctx):
         break
 
     # Vérifier si le joueur a gagné
-    if check_win(grille,
-    def check_win(grille, symbol):
+    if check_win(grille):
+      def check_win(grille, symbol):
       # Vérifier les lignes
-      for ligne in grille:
-        for i in range(4):
-          if ligne[i] == symbol and ligne[i+1] == symbol and ligne[i+2] == symbol and ligne[i+3] == symbol:
-            return True
+        for ligne in grille:
+          for i in range(4):
+            if ligne[i] == symbol and ligne[i+1] == symbol and ligne[i+2] == symbol and ligne[i+3] == symbol:
+              return True
 
       # Vérifier les colonnes
-      for i in range(7):
-        for j in range(3):
-          if grille[i][j] == symbol and grille[i][j+1] == symbol and grille[i][j+2] == symbol and grille[i][j+3] == symbol:
-            return True
+        for i in range(7):
+          for j in range(3):
+            if grille[i][j] == symbol and grille[i][j+1] == symbol and grille[i][j+2] == symbol and grille[i][j+3] == symbol:
+              return True
 
       # Vérifier les diagonales
-      for i in range(4):
-        for j in range(3):
-          if grille[i][j] == symbol and grille[i+1][j+1] == symbol and grille[i+2][j+2] == symbol and grille[i+3][j+3] == symbol:
-            return True
-      for i in range(4):
-        for j in range(3):
-          if grille[i][j+3] == symbol and grille[i+1][j+2] == symbol and grille[i+2][j+1] == symbol and grille[i+3][j] == symbol:
-            return True
+        for i in range(4):
+          for j in range(3):
+            if grille[i][j] == symbol and grille[i+1][j+1] == symbol and grille[i+2][j+2] == symbol and grille[i+3][j+3] == symbol:
+              return True
+
+        for i in range(4):
+          for j in range(3):
+            if grille[i][j+3] == symbol and grille[i+1][j+2] == symbol and grille[i+2][j+1] == symbol and grille[i+3][j] == symbol:
+              return True
 
       return False
 
@@ -143,5 +144,10 @@ async def puissance4(ctx):
       await ctx.send(message)
 
     client.run('TOKEN')
+
+
+
+
+
 
 
