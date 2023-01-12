@@ -168,7 +168,7 @@ class P4(commands.Cog, name='Game'):
 
     @commands.command(name="puissance4", help='help du puissance 4', aliases=['p4'], )
     async def _p4(self, event):
-        await event.send('p4')
+        await event.send('fonctionnalité en cours de dev, désolé')
 
 
 async def setup(bot):

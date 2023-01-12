@@ -25,9 +25,9 @@ class Game(P4, commands.Cog, name='Game'):
     async def cog_load(self):  # called when the cog is loaded
         print(self.__class__.__name__ + " is loaded")
 
-    @commands.command(name="tttt", help='tttt', aliases=['tt'], )
-    async def _ttttt(self, event):  # called when the cog is loaded
-        await event.send('game')
+    # @commands.command(name="tttt", help='tttt', aliases=['tt'], )
+    # async def _ttttt(self, event):  # called when the cog is loaded
+    #     await event.send('game')
 
 
 
